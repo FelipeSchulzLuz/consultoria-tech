@@ -23,17 +23,23 @@ const PortfolioGrid = styled.div`
   margin: 0 auto;
 `;
 
+const DescriptionText = styled.p`
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  color: ${({ theme }) => theme.text};
+`;
+
 const portfolioData = [
   {
-    title: 'Aplicativo Omnichannel Panvel com IA e Automação',
-    description: 'Desenvolvimento e evolução de um aplicativo mobile com mais de 1 milhão de downloads, integrando e-commerce, IA (busca inteligente, assistente virtual) e automações. Foco em performance e experiência do usuário, resultando em +20% na retenção de usuários e redução de chamados com alertas automatizados. Utilizamos React Native, TypeScript e Firebase, com práticas de Clean Code, Acessibilidade, DevOps e CI/CD para um deploy mobile otimizado.',
+    title: 'Aplicativo Omnichannel com IA e Automação',
+    description: 'Participação na evolução e implementação de melhorias e novas funcionalidades em um aplicativo mobile omnichannel com milhões de downloads, integrando e-commerce, IA (busca inteligente, assistente virtual) e automações. Foco em performance e experiência do usuário, resultando em +20% na retenção de usuários e redução de chamados com alertas automatizados. Utilizamos React Native, TypeScript e Firebase, com práticas de Clean Code, Acessibilidade, DevOps e CI/CD para um deploy mobile otimizado.',
   },
   {
-    title: 'Portal Dimed: Agendamentos e Logística',
-    description: 'Criação de uma interface intuitiva para controle de coletas e gestão de docas, utilizando React. Esta solução otimizou a logística, reduzindo falhas e integrando-se perfeitamente aos sistemas internos da Dimed, com foco em Clean Architecture e testes robustos (Jest, Cypress).',
+    title: 'Plataforma de Agendamentos e Logística',
+    description: 'Criação de uma interface intuitiva para controle de coletas e gestão de docas, utilizando React. Esta solução otimizou a logística, reduzindo falhas e integrando-se perfeitamente a sistemas internos, com foco em Clean Architecture e testes robustos (Jest, Cypress).',
   },
   {
-    title: 'Portal Dimed: Fornecedores e Governança de Verbas',
+    title: 'Plataforma de Fornecedores e Governança de Verbas',
     description: 'Desenvolvimento de uma plataforma robusta para gestão de fornecedores e governança de verbas, otimizando processos e garantindo conformidade. A solução foi construída com React, Node.js e Java (Spring), utilizando Docker para orquestração e seguindo princípios de Clean Code, DevOps e CI/CD.',
   },
   {
@@ -62,6 +68,9 @@ export default function PortfolioPage() {
   return (
     <PortfolioContainer>
       <Title>Nosso Portfólio</Title>
+      <DescriptionText>
+        Apresentamos alguns projetos e experiências relevantes que demonstram a expertise e a capacidade técnica de nossa equipe. Muitos desses projetos foram desenvolvidos pelos nossos especialistas em suas carreiras anteriores, contribuindo para a vasta experiência que hoje oferecemos em consultoria.
+      </DescriptionText>
       <PortfolioGrid>
         {portfolioData.map((project, index) => (
           <PortfolioCard

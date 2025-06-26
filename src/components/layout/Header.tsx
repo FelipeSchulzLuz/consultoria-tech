@@ -20,14 +20,14 @@ const HeaderContainer = styled.header`
   }
 `;
 
-const Nav = styled.nav<{ isOpen: boolean }>`
+const Nav = styled.nav<{ $isOpen: boolean }>`
   display: flex;
   gap: 1rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
-    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')};
     text-align: center;
     margin-top: 1rem;
   }
@@ -92,7 +92,7 @@ export default function Header() {
         {isOpen ? '✕' : '☰'}
       </MobileMenuButton>
       <Logo href="/">ConsultoriaTech</Logo>
-      <Nav isOpen={isOpen}>
+      <Nav $isOpen={isOpen}>
         <NavLink href="/services" onClick={() => setIsOpen(false)}>Serviços</NavLink>
         <NavLink href="/portfolio" onClick={() => setIsOpen(false)}>Portfólio</NavLink>
         <NavLink href="/about" onClick={() => setIsOpen(false)}>Sobre Nós</NavLink>
