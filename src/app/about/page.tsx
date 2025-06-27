@@ -64,23 +64,23 @@ const teamMembers = [
   {
     name: 'Felipe Schulz',
     role: 'CEO & Arquiteto de Soluções',
-    image: '/images/felipe.jpg', // Placeholder para a imagem
+    image: '/images/felipe.jpg',
   },
   {
     name: 'Bruno Fraga',
     role: 'Líder de Desenvolvimento Backend e Qualidade (QA)',
-    image: '/images/bruno.jpg', // Placeholder para a imagem
+    image: '/images/bruno.jpg',
   },
   {
     name: 'Guilherme Schulz',
     role: 'Líder de Desenvolvimento Frontend e UI/UX',
-    image: '/images/guilherme.jpg', // Placeholder para a imagem
+    image: '/images/guilherme.jpg',
   },
   {
     name: 'Wagner Burgie',
     role: 'Líder de Desenvolvimento Fullstack',
-    image: '/images/wagner.jpg', // Placeholder para a imagem
-  },
+    image: '/images/wagner.jpg',
+  }
 ];
 
 export default function AboutPage() {
